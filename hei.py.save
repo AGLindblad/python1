@@ -1,0 +1,21 @@
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+  return "hello world :)"
+
+if __name__ == '__main__':
+  app.run(debug=True) # testing only
+  #app.run (port=8888) 
+
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+  return "hello world"
+
+app.run(debug=True) # testing only
