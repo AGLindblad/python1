@@ -1,7 +1,7 @@
 pituus = float(input("Mikä on pituutesi (cm): "))
 paino = float(input("Miten paljon painat (kg): "))
 
-PIndeksi = paino / (pituus/100)**2
+PIndeksi = round((paino / (pituus/100)**2),2)
 
 print(f"Painoindeksisi on {PIndeksi}")
 
